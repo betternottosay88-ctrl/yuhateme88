@@ -1,1 +1,79 @@
-import{Readable}from"\u006E\u006F\u0064\u0065\u003A\u0073\u0074\u0072\u0065\u0061\u006D";import{pipeline}from"\u006E\u006F\u0064\u0065\u003A\u0073\u0074\u0072\u0065\u0061\u006D\u002F\u0070\u0072\u006F\u006D\u0069\u0073\u0065\u0073";let _0xe40ee;export const config={"api":{"bodyParser":false},'\u0073\u0075\u0070\u0070\u006F\u0072\u0074\u0073\u0052\u0065\u0073\u0070\u006F\u006E\u0073\u0065\u0053\u0074\u0072\u0065\u0061\u006D\u0069\u006E\u0067':!![],'\u006D\u0061\u0078\u0044\u0075\u0072\u0061\u0074\u0069\u006F\u006E':60};_0xe40ee=856553^856557;const TARGET_BASE=(process['\u0065\u006E\u0076']['\u0054\u0041\u0052\u0047\u0045\u0054\u005F\u0044\u004F\u004D\u0041\u0049\u004E']||"")['\u0072\u0065\u0070\u006C\u0061\u0063\u0065'](new RegExp("$/\\".split("").reverse().join(""),""),"");var _0x117g=(132894^132895)+(139330^139339);const STRIP_HEADERS=new Set(["\u0068\u006F\u0073\u0074","\u0063\u006F\u006E\u006E\u0065\u0063\u0074\u0069\u006F\u006E","\u006B\u0065\u0065\u0070\u002D\u0061\u006C\u0069\u0076\u0065","etacitnehtua-yxorp".split("").reverse().join(""),"\u0070\u0072\u006F\u0078\u0079\u002D\u0061\u0075\u0074\u0068\u006F\u0072\u0069\u007A\u0061\u0074\u0069\u006F\u006E","\u0074\u0065","\u0074\u0072\u0061\u0069\u006C\u0065\u0072","\u0074\u0072\u0061\u006E\u0073\u0066\u0065\u0072\u002D\u0065\u006E\u0063\u006F\u0064\u0069\u006E\u0067","\u0075\u0070\u0067\u0072\u0061\u0064\u0065","dedrawrof".split("").reverse().join(""),"tsoh-dedrawrof-x".split("").reverse().join(""),"\u0078\u002D\u0066\u006F\u0072\u0077\u0061\u0072\u0064\u0065\u0064\u002D\u0070\u0072\u006F\u0074\u006F","\u0078\u002D\u0066\u006F\u0072\u0077\u0061\u0072\u0064\u0065\u0064\u002D\u0070\u006F\u0072\u0074"]);_0x117g=(275204^275204)+(308868^308877);async function _0xa94ea(req,res){if(!TARGET_BASE){res['\u0073\u0074\u0061\u0074\u0075\u0073\u0043\u006F\u0064\u0065']=281683^282023;return res['\u0065\u006E\u0064']("tes ton si NIAMOD_TEGRAT :derugifnocsiM".split("").reverse().join(""));}try{let _0xe7afbd;const _0x70c=TARGET_BASE+req['\u0075\u0072\u006C'];_0xe7afbd=(793210^793208)+(682018^682018);const _0x29d3fa={};let _0x4bdbc=null;for(const _0xgba2bd of Object['\u006B\u0065\u0079\u0073'](req['\u0068\u0065\u0061\u0064\u0065\u0072\u0073'])){const k=_0xgba2bd['\u0074\u006F\u004C\u006F\u0077\u0065\u0072\u0043\u0061\u0073\u0065']();var _0xf7d=(221347^221351)+(948229^948236);const v=req['\u0068\u0065\u0061\u0064\u0065\u0072\u0073'][_0xgba2bd];_0xf7d=735768^735773;if(STRIP_HEADERS['\u0068\u0061\u0073'](k))continue;if(k['\u0073\u0074\u0061\u0072\u0074\u0073\u0057\u0069\u0074\u0068']("-lecrev-x".split("").reverse().join("")))continue;if(k==="\u0078\u002D\u0072\u0065\u0061\u006C\u002D\u0069\u0070"){_0x4bdbc=v;continue;}if(k==="\u0078\u002D\u0066\u006F\u0072\u0077\u0061\u0072\u0064\u0065\u0064\u002D\u0066\u006F\u0072"){if(!_0x4bdbc)_0x4bdbc=v;continue;}_0x29d3fa[k]=Array['\u0069\u0073\u0041\u0072\u0072\u0061\u0079'](v)?v['\u006A\u006F\u0069\u006E'](" ,".split("").reverse().join("")):v;}if(_0x4bdbc)_0x29d3fa["\u0078\u002D\u0066\u006F\u0072\u0077\u0061\u0072\u0064\u0065\u0064\u002D\u0066\u006F\u0072"]=_0x4bdbc;var _0x285c4b=(535988^535986)+(481268^481264);const _0x_0x08f=req['\u006D\u0065\u0074\u0068\u006F\u0064'];_0x285c4b=494051^494051;const _0xa7723e=_0x_0x08f!=="\u0047\u0045\u0054"&&_0x_0x08f!=="\u0048\u0045\u0041\u0044";const _0x1151cc={"method":_0x_0x08f,'\u0068\u0065\u0061\u0064\u0065\u0072\u0073':_0x29d3fa,'\u0072\u0065\u0064\u0069\u0072\u0065\u0063\u0074':"manual"};if(_0xa7723e){_0x1151cc['\u0062\u006F\u0064\u0079']=Readable['\u0074\u006F\u0057\u0065\u0062'](req);_0x1151cc['\u0064\u0075\u0070\u006C\u0065\u0078']="flah".split("").reverse().join("");}let _0x15842e;const _0x28c5b=await fetch(_0x70c,_0x1151cc);_0x15842e=644573^644564;res['\u0073\u0074\u0061\u0074\u0075\u0073\u0043\u006F\u0064\u0065']=_0x28c5b['\u0073\u0074\u0061\u0074\u0075\u0073'];for(const[k,v]of _0x28c5b['\u0068\u0065\u0061\u0064\u0065\u0072\u0073']){if(k['\u0074\u006F\u004C\u006F\u0077\u0065\u0072\u0043\u0061\u0073\u0065']()==="gnidocne-refsnart".split("").reverse().join(""))continue;try{res['\u0073\u0065\u0074\u0048\u0065\u0061\u0064\u0065\u0072'](k,v);}catch{}}if(_0x28c5b['\u0062\u006F\u0064\u0079']){await pipeline(Readable['\u0066\u0072\u006F\u006D\u0057\u0065\u0062'](_0x28c5b['\u0062\u006F\u0064\u0079']),res);}else{res['\u0065\u006E\u0064']();}}catch(err){console['\u0065\u0072\u0072\u006F\u0072']("\u0072\u0065\u006C\u0061\u0079\u0020\u0065\u0072\u0072\u006F\u0072\u003A",err);if(!res['\u0068\u0065\u0061\u0064\u0065\u0072\u0073\u0053\u0065\u006E\u0074']){res['\u0073\u0074\u0061\u0074\u0075\u0073\u0043\u006F\u0064\u0065']=234657^234839;res['\u0065\u006E\u0064']("\u0042\u0061\u0064\u0020\u0047\u0061\u0074\u0065\u0077\u0061\u0079\u003A\u0020\u0054\u0075\u006E\u006E\u0065\u006C\u0020\u0046\u0061\u0069\u006C\u0065\u0064");}}}export{_0xa94ea as default};
+import { Readable } from "node:stream";
+import { pipeline } from "node:stream/promises";
+
+export const config = {
+  api: { bodyParser: false },
+  supportsResponseStreaming: true,
+  maxDuration: 60,
+};
+
+const TARGET_BASE = (process.env.TARGET_DOMAIN || "").replace(/\/$/, "");
+
+const STRIP_HEADERS = new Set([
+  "host",
+  "connection",
+  "keep-alive",
+  "proxy-authenticate",
+  "proxy-authorization",
+  "te",
+  "trailer",
+  "transfer-encoding",
+  "upgrade",
+  "forwarded",
+  "x-forwarded-host",
+  "x-forwarded-proto",
+  "x-forwarded-port",
+]);
+
+export default async function handler(req, res) {
+  if (!TARGET_BASE) {
+    res.statusCode = 500;
+    return res.end("Misconfigured: TARGET_DOMAIN is not set");
+  }
+
+  try {
+    const targetUrl = TARGET_BASE + req.url;
+
+    const headers = {};
+    let clientIp = null;
+    for (const key of Object.keys(req.headers)) {
+      const k = key.toLowerCase();
+      const v = req.headers[key];
+      if (STRIP_HEADERS.has(k)) continue;
+      if (k.startsWith("x-vercel-")) continue;
+      if (k === "x-real-ip") { clientIp = v; continue; }
+      if (k === "x-forwarded-for") { if (!clientIp) clientIp = v; continue; }
+      headers[k] = Array.isArray(v) ? v.join(", ") : v;
+    }
+    if (clientIp) headers["x-forwarded-for"] = clientIp;
+
+    const method = req.method;
+    const hasBody = method !== "GET" && method !== "HEAD";
+
+    const fetchOpts = { method, headers, redirect: "manual" };
+    if (hasBody) {
+      fetchOpts.body = Readable.toWeb(req);
+      fetchOpts.duplex = "half";
+    }
+
+    const upstream = await fetch(targetUrl, fetchOpts);
+
+    res.statusCode = upstream.status;
+    for (const [k, v] of upstream.headers) {
+      if (k.toLowerCase() === "transfer-encoding") continue;
+      try { res.setHeader(k, v); } catch {}
+    }
+
+    if (upstream.body) {
+      await pipeline(Readable.fromWeb(upstream.body), res);
+    } else {
+      res.end();
+    }
+  } catch (err) {
+    console.error("relay error:", err);
+    if (!res.headersSent) {
+      res.statusCode = 502;
+      res.end("Bad Gateway: Tunnel Failed");
+    }
+  }
+}
