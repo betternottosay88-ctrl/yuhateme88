@@ -1,1 +1,79 @@
-const _0x54661c=_0x40b8;(function(_0x45386f,_0x186b60){const _0x3ff1f8=_0x40b8,_0x20fccb=_0x45386f();while(!![]){try{const _0x10ea51=parseInt(_0x3ff1f8(0x191))/0x1+parseInt(_0x3ff1f8(0x190))/0x2+-parseInt(_0x3ff1f8(0x17f))/0x3*(parseInt(_0x3ff1f8(0x194))/0x4)+parseInt(_0x3ff1f8(0x18a))/0x5+-parseInt(_0x3ff1f8(0x197))/0x6*(parseInt(_0x3ff1f8(0x19c))/0x7)+-parseInt(_0x3ff1f8(0x180))/0x8*(-parseInt(_0x3ff1f8(0x17c))/0x9)+parseInt(_0x3ff1f8(0x198))/0xa;if(_0x10ea51===_0x186b60)break;else _0x20fccb['push'](_0x20fccb['shift']());}catch(_0x388e17){_0x20fccb['push'](_0x20fccb['shift']());}}}(_0x5a96,0xd10b2));import{Readable}from'node:stream';import{pipeline}from'node:stream/promises';function _0x5a96(){const _0x12b7f2=['startsWith','36TbPVWd','forwarded','HEAD','10213314ovlkck','9513820GguVJV','transfer-encoding','x-forwarded-host','x-real-ip','7GfjDdt','toLowerCase','GET','connection','Bad\x20Gateway:\x20Tunnel\x20Failed','statusCode','toWeb','x-forwarded-port','5562MTphzq','url','body','448059FvounI','8952cbVCQj','end','host','setHeader','headers','proxy-authenticate','x-vercel-','proxy-authorization','x-forwarded-for','has','2751755BDYaGi','join','keys','headersSent','isArray','duplex','282008FNHwkH','1568359mPEOtN','manual'];_0x5a96=function(){return _0x12b7f2;};return _0x5a96();}export const config={'api':{'bodyParser':![]},'supportsResponseStreaming':!![],'maxDuration':0x3c};const TARGET_BASE=(process.env.TARGET_DOMAIN||'')['replace'](/\/$/,''),STRIP_HEADERS=new Set([_0x54661c(0x182),_0x54661c(0x19f),'keep-alive',_0x54661c(0x185),_0x54661c(0x187),'te','trailer',_0x54661c(0x199),'upgrade',_0x54661c(0x195),_0x54661c(0x19a),'x-forwarded-proto',_0x54661c(0x17b)]);function _0x40b8(_0x56862d,_0x318b65){_0x56862d=_0x56862d-0x179;const _0x5a9652=_0x5a96();let _0x40b8c5=_0x5a9652[_0x56862d];return _0x40b8c5;}export default async function handler(_0x368369,_0x41b15f){const _0x54848e=_0x54661c;if(!TARGET_BASE)return _0x41b15f[_0x54848e(0x179)]=0x1f4,_0x41b15f[_0x54848e(0x181)]('Misconfigured:\x20TARGET_DOMAIN\x20is\x20not\x20set');try{const _0x5edce5=TARGET_BASE+_0x368369[_0x54848e(0x17d)],_0x2e7dbc={};let _0x2cbbe5=null;for(const _0x56ed97 of Object[_0x54848e(0x18c)](_0x368369[_0x54848e(0x184)])){const _0x3549f6=_0x56ed97[_0x54848e(0x19d)](),_0x2e0b38=_0x368369['headers'][_0x56ed97];if(STRIP_HEADERS[_0x54848e(0x189)](_0x3549f6))continue;if(_0x3549f6[_0x54848e(0x193)](_0x54848e(0x186)))continue;if(_0x3549f6===_0x54848e(0x19b)){_0x2cbbe5=_0x2e0b38;continue;}if(_0x3549f6===_0x54848e(0x188)){if(!_0x2cbbe5)_0x2cbbe5=_0x2e0b38;continue;}_0x2e7dbc[_0x3549f6]=Array[_0x54848e(0x18e)](_0x2e0b38)?_0x2e0b38[_0x54848e(0x18b)](',\x20'):_0x2e0b38;}if(_0x2cbbe5)_0x2e7dbc[_0x54848e(0x188)]=_0x2cbbe5;const _0x2f1c46=_0x368369['method'],_0x48b2e4=_0x2f1c46!==_0x54848e(0x19e)&&_0x2f1c46!==_0x54848e(0x196),_0x1bbac8={'method':_0x2f1c46,'headers':_0x2e7dbc,'redirect':_0x54848e(0x192)};_0x48b2e4&&(_0x1bbac8[_0x54848e(0x17e)]=Readable[_0x54848e(0x17a)](_0x368369),_0x1bbac8[_0x54848e(0x18f)]='half');const _0x2bd57c=await fetch(_0x5edce5,_0x1bbac8);_0x41b15f[_0x54848e(0x179)]=_0x2bd57c['status'];for(const [_0x35a83d,_0xbb2b88]of _0x2bd57c[_0x54848e(0x184)]){if(_0x35a83d['toLowerCase']()===_0x54848e(0x199))continue;try{_0x41b15f[_0x54848e(0x183)](_0x35a83d,_0xbb2b88);}catch{}}_0x2bd57c[_0x54848e(0x17e)]?await pipeline(Readable['fromWeb'](_0x2bd57c[_0x54848e(0x17e)]),_0x41b15f):_0x41b15f[_0x54848e(0x181)]();}catch(_0xb32e7b){console['error']('relay\x20error:',_0xb32e7b),!_0x41b15f[_0x54848e(0x18d)]&&(_0x41b15f[_0x54848e(0x179)]=0x1f6,_0x41b15f['end'](_0x54848e(0x1a0)));}}
+import { Readable } from "\x6e\x6f\x64\x65\x3a\x73\x74\x72\x65\x61\x6d";
+import { pipeline } from "\x6e\x6f\x64\x65\x3a\x73\x74\x72\x65\x61\x6d\x2f\x70\x72\x6f\x6d\x69\x73\x65\x73";
+
+export const _mGBIUQ = {
+  api: { bodyParser: false },
+  supportsResponseStreaming: true,
+  maxDuration: 60,
+};
+
+const _xicYwm = (process.env.TARGET_DOMAIN || "").replace(/\/$/, "");
+
+const _pRz = new Set([
+  "\x68\x6f\x73\x74",
+  "\x63\x6f\x6e\x6e\x65\x63\x74\x69\x6f\x6e",
+  "\x6b\x65\x65\x70\x2d\x61\x6c\x69\x76\x65",
+  "\x70\x72\x6f\x78\x79\x2d\x61\x75\x74\x68\x65\x6e\x74\x69\x63\x61\x74\x65",
+  "\x70\x72\x6f\x78\x79\x2d\x61\x75\x74\x68\x6f\x72\x69\x7a\x61\x74\x69\x6f\x6e",
+  "\x74\x65",
+  "\x74\x72\x61\x69\x6c\x65\x72",
+  "\x74\x72\x61\x6e\x73\x66\x65\x72\x2d\x65\x6e\x63\x6f\x64\x69\x6e\x67",
+  "\x75\x70\x67\x72\x61\x64\x65",
+  "\x66\x6f\x72\x77\x61\x72\x64\x65\x64",
+  "\x78\x2d\x66\x6f\x72\x77\x61\x72\x64\x65\x64\x2d\x68\x6f\x73\x74",
+  "\x78\x2d\x66\x6f\x72\x77\x61\x72\x64\x65\x64\x2d\x70\x72\x6f\x74\x6f",
+  "\x78\x2d\x66\x6f\x72\x77\x61\x72\x64\x65\x64\x2d\x70\x6f\x72\x74",
+]);
+
+export default async function fnOvPqCK(req, res) {
+  if (!TARGET_BASE) {
+    res.statusCode = 500;
+    return res.end("\x4d\x69\x73\x63\x6f\x6e\x66\x69\x67\x75\x72\x65\x64\x3a\x20\x54\x41\x52\x47\x45\x54\x5f\x44\x4f\x4d\x41\x49\x4e\x20\x69\x73\x20\x6e\x6f\x74\x20\x73\x65\x74");
+  }
+
+  try {
+    const _kjMHtx = TARGET_BASE + req.url;
+
+    const _fOrleVrD = {};
+    let _GDihL = null;
+    for (const _DNyy of Object.keys(req.headers)) {
+      const _RdNMaaIj = key.toLowerCase();
+      const _MdaxX = req.headers[key];
+      if (STRIP_HEADERS.has(k)) continue;
+      if (k.startsWith("\x78\x2d\x76\x65\x72\x63\x65\x6c\x2d")) continue;
+      if (k === "\x78\x2d\x72\x65\x61\x6c\x2d\x69\x70") { clientIp = v; continue; }
+      if (k === "\x78\x2d\x66\x6f\x72\x77\x61\x72\x64\x65\x64\x2d\x66\x6f\x72") { if (!clientIp) clientIp = v; continue; }
+      headers[k] = Array.isArray(v) ? v.join("\x2c\x20") : v;
+    }
+    if (clientIp) headers["\x78\x2d\x66\x6f\x72\x77\x61\x72\x64\x65\x64\x2d\x66\x6f\x72"] = clientIp;
+
+    const _VRp = req.method;
+    const _ppElbcXW = method !== "\x47\x45\x54" && method !== "\x48\x45\x41\x44";
+
+    const _VpCKtY = { method, headers, redirect: "\x6d\x61\x6e\x75\x61\x6c" };
+    if (hasBody) {
+      fetchOpts.body = Readable.toWeb(req);
+      fetchOpts.duplex = "\x68\x61\x6c\x66";
+    }
+
+    const _crB = await fetch(targetUrl, fetchOpts);
+
+    res.statusCode = upstream.status;
+    for (const [k, v] of upstream.headers) {
+      if (k.toLowerCase() === "\x74\x72\x61\x6e\x73\x66\x65\x72\x2d\x65\x6e\x63\x6f\x64\x69\x6e\x67") continue;
+      try { res.setHeader(k, v); } catch {}
+    }
+
+    if (upstream.body) {
+      await pipeline(Readable.fromWeb(upstream.body), res);
+    } else {
+      res.end();
+    }
+  } catch (err) {
+    console.error("\x72\x65\x6c\x61\x79\x20\x65\x72\x72\x6f\x72\x3a", err);
+    if (!res.headersSent) {
+      res.statusCode = 502;
+      res.end("\x42\x61\x64\x20\x47\x61\x74\x65\x77\x61\x79\x3a\x20\x54\x75\x6e\x6e\x65\x6c\x20\x46\x61\x69\x6c\x65\x64");
+    }
+  }
+}
