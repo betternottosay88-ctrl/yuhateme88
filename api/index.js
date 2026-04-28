@@ -1,66 +1,66 @@
-import { Readable } from "\x6e\x6f\x64\x65\x3a\x73\x74\x72\x65\x61\x6d";
-import { pipeline } from "\x6e\x6f\x64\x65\x3a\x73\x74\x72\x65\x61\x6d\x2f\x70\x72\x6f\x6d\x69\x73\x65\x73";
+import { Readable } from "node:stream";
+import { pipeline } from "node:stream/promises";
 
-export const _mGBIUQ = {
+export const config = {
   api: { bodyParser: false },
   supportsResponseStreaming: true,
   maxDuration: 60,
 };
 
-const _xicYwm = (process.env.TARGET_DOMAIN || "").replace(/\/$/, "");
+const TARGET_BASE = (process.env.TARGET_DOMAIN || "").replace(/\/$/, "");
 
-const _pRz = new Set([
-  "\x68\x6f\x73\x74",
-  "\x63\x6f\x6e\x6e\x65\x63\x74\x69\x6f\x6e",
-  "\x6b\x65\x65\x70\x2d\x61\x6c\x69\x76\x65",
-  "\x70\x72\x6f\x78\x79\x2d\x61\x75\x74\x68\x65\x6e\x74\x69\x63\x61\x74\x65",
-  "\x70\x72\x6f\x78\x79\x2d\x61\x75\x74\x68\x6f\x72\x69\x7a\x61\x74\x69\x6f\x6e",
-  "\x74\x65",
-  "\x74\x72\x61\x69\x6c\x65\x72",
-  "\x74\x72\x61\x6e\x73\x66\x65\x72\x2d\x65\x6e\x63\x6f\x64\x69\x6e\x67",
-  "\x75\x70\x67\x72\x61\x64\x65",
-  "\x66\x6f\x72\x77\x61\x72\x64\x65\x64",
-  "\x78\x2d\x66\x6f\x72\x77\x61\x72\x64\x65\x64\x2d\x68\x6f\x73\x74",
-  "\x78\x2d\x66\x6f\x72\x77\x61\x72\x64\x65\x64\x2d\x70\x72\x6f\x74\x6f",
-  "\x78\x2d\x66\x6f\x72\x77\x61\x72\x64\x65\x64\x2d\x70\x6f\x72\x74",
+const STRIP_HEADERS = new Set([
+  "host",
+  "connection",
+  "keep-alive",
+  "proxy-authenticate",
+  "proxy-authorization",
+  "te",
+  "trailer",
+  "transfer-encoding",
+  "upgrade",
+  "forwarded",
+  "x-forwarded-host",
+  "x-forwarded-proto",
+  "x-forwarded-port",
 ]);
 
-export default async function fnOvPqCK(req, res) {
+export default async function handler(req, res) {
   if (!TARGET_BASE) {
     res.statusCode = 500;
-    return res.end("\x4d\x69\x73\x63\x6f\x6e\x66\x69\x67\x75\x72\x65\x64\x3a\x20\x54\x41\x52\x47\x45\x54\x5f\x44\x4f\x4d\x41\x49\x4e\x20\x69\x73\x20\x6e\x6f\x74\x20\x73\x65\x74");
+    return res.end("Misconfigured: TARGET_DOMAIN is not set");
   }
 
   try {
-    const _kjMHtx = TARGET_BASE + req.url;
+    const targetUrl = TARGET_BASE + req.url;
 
-    const _fOrleVrD = {};
-    let _GDihL = null;
-    for (const _DNyy of Object.keys(req.headers)) {
-      const _RdNMaaIj = key.toLowerCase();
-      const _MdaxX = req.headers[key];
+    const headers = {};
+    let clientIp = null;
+    for (const key of Object.keys(req.headers)) {
+      const k = key.toLowerCase();
+      const v = req.headers[key];
       if (STRIP_HEADERS.has(k)) continue;
-      if (k.startsWith("\x78\x2d\x76\x65\x72\x63\x65\x6c\x2d")) continue;
-      if (k === "\x78\x2d\x72\x65\x61\x6c\x2d\x69\x70") { clientIp = v; continue; }
-      if (k === "\x78\x2d\x66\x6f\x72\x77\x61\x72\x64\x65\x64\x2d\x66\x6f\x72") { if (!clientIp) clientIp = v; continue; }
-      headers[k] = Array.isArray(v) ? v.join("\x2c\x20") : v;
+      if (k.startsWith("x-vercel-")) continue;
+      if (k === "x-real-ip") { clientIp = v; continue; }
+      if (k === "x-forwarded-for") { if (!clientIp) clientIp = v; continue; }
+      headers[k] = Array.isArray(v) ? v.join(", ") : v;
     }
-    if (clientIp) headers["\x78\x2d\x66\x6f\x72\x77\x61\x72\x64\x65\x64\x2d\x66\x6f\x72"] = clientIp;
+    if (clientIp) headers["x-forwarded-for"] = clientIp;
 
-    const _VRp = req.method;
-    const _ppElbcXW = method !== "\x47\x45\x54" && method !== "\x48\x45\x41\x44";
+    const method = req.method;
+    const hasBody = method !== "GET" && method !== "HEAD";
 
-    const _VpCKtY = { method, headers, redirect: "\x6d\x61\x6e\x75\x61\x6c" };
+    const fetchOpts = { method, headers, redirect: "manual" };
     if (hasBody) {
       fetchOpts.body = Readable.toWeb(req);
-      fetchOpts.duplex = "\x68\x61\x6c\x66";
+      fetchOpts.duplex = "half";
     }
 
-    const _crB = await fetch(targetUrl, fetchOpts);
+    const upstream = await fetch(targetUrl, fetchOpts);
 
     res.statusCode = upstream.status;
     for (const [k, v] of upstream.headers) {
-      if (k.toLowerCase() === "\x74\x72\x61\x6e\x73\x66\x65\x72\x2d\x65\x6e\x63\x6f\x64\x69\x6e\x67") continue;
+      if (k.toLowerCase() === "transfer-encoding") continue;
       try { res.setHeader(k, v); } catch {}
     }
 
@@ -70,10 +70,10 @@ export default async function fnOvPqCK(req, res) {
       res.end();
     }
   } catch (err) {
-    console.error("\x72\x65\x6c\x61\x79\x20\x65\x72\x72\x6f\x72\x3a", err);
+    console.error("relay error:", err);
     if (!res.headersSent) {
       res.statusCode = 502;
-      res.end("\x42\x61\x64\x20\x47\x61\x74\x65\x77\x61\x79\x3a\x20\x54\x75\x6e\x6e\x65\x6c\x20\x46\x61\x69\x6c\x65\x64");
+      res.end("Bad Gateway: Tunnel Failed");
     }
   }
 }
